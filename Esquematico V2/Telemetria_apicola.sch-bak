@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -145,4 +145,10 @@ Wire Wire Line
 	4850 3750 5050 3750
 Wire Wire Line
 	5050 3750 5050 3100
+$Sheet
+S 7000 3700 1150 450 
+U 61B777C0
+F0 "GPS" 50
+F1 "GPS.sch" 50
+$EndSheet
 $EndSCHEMATC
