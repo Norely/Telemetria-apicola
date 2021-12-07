@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -13,155 +13,64 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text GLabel 2750 3350 0    50   Input ~ 0
+Tx
+Text GLabel 2750 3500 0    50   Input ~ 0
+Rx
+Wire Wire Line
+	2850 3400 2850 3350
+Wire Wire Line
+	2850 3350 2750 3350
+Wire Wire Line
+	3350 3500 2750 3500
+Wire Wire Line
+	3350 3400 2850 3400
 $Comp
-L L80-R:L80-R U?
-U 1 1 61A8E8B1
-P 6000 3400
-F 0 "U?" H 6000 4167 50  0000 C CNN
-F 1 "L80-R" H 6000 4076 50  0000 C CNN
-F 2 "SnapEDA Library:XCVR_L80-R" H 6000 3400 50  0001 L BNN
-F 3 "" H 6000 3400 50  0001 L BNN
-F 4 "L80" H 6000 3400 50  0001 L BNN "MP"
-F 5 "Radial Can  Quectel" H 6000 3400 50  0001 L BNN "PACKAGE"
-F 6 "None" H 6000 3400 50  0001 L BNN "PRICE"
-F 7 "Unavailable" H 6000 3400 50  0001 L BNN "AVAILABILITY"
-F 8 "Quectel" H 6000 3400 50  0001 L BNN "MF"
-F 9 "L80 is an ultra compact GPS POT _Patch on Top_ module with an embedded 15.0mm × 15.0mm × 4.0mm patch antenna." H 6000 3400 50  0001 L BNN "DESCRIPTION"
-	1    6000 3400
+L NEO-6M-0-001:NEO-6M-0-001 IC?
+U 1 1 6193A28E
+P 3350 2700
+F 0 "IC?" H 4300 2965 50  0000 C CNN
+F 1 "NEO-6M-0-001" H 4300 2874 50  0000 C CNN
+F 2 "NEO6M0001" H 5100 2800 50  0001 L CNN
+F 3 "https://www.u-blox.com/sites/default/files/products/documents/NEO-6_DataSheet_%28GPS.G6-HW-09005%29.pdf" H 5100 2700 50  0001 L CNN
+F 4 "GPS Module" H 5100 2600 50  0001 L CNN "Description"
+F 5 "2.6" H 5100 2500 50  0001 L CNN "Height"
+F 6 "U-Blox" H 5100 2400 50  0001 L CNN "Manufacturer_Name"
+F 7 "NEO-6M-0-001" H 5100 2300 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "" H 5100 2200 50  0001 L CNN "Mouser Part Number"
+F 9 "" H 5100 2100 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 5100 2000 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 5100 1900 50  0001 L CNN "Arrow Price/Stock"
+	1    3350 2700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 61AF57C5
-P 7100 2450
-F 0 "C?" H 7215 2496 50  0000 L CNN
-F 1 "10uF" H 7215 2405 50  0000 L CNN
-F 2 "" H 7138 2300 50  0001 C CNN
-F 3 "~" H 7100 2450 50  0001 C CNN
-	1    7100 2450
-	-1   0    0    1   
+L power:+3.3V #PWR?
+U 1 1 61B02823
+P 2450 3700
+F 0 "#PWR?" H 2450 3550 50  0001 C CNN
+F 1 "+3.3V" H 2465 3873 50  0000 C CNN
+F 2 "" H 2450 3700 50  0001 C CNN
+F 3 "" H 2450 3700 50  0001 C CNN
+	1    2450 3700
+	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 61AF6023
-P 6750 2450
-F 0 "C?" H 6865 2496 50  0000 L CNN
-F 1 "100nF" H 6865 2405 50  0000 L CNN
-F 2 "" H 6788 2300 50  0001 C CNN
-F 3 "~" H 6750 2450 50  0001 C CNN
-	1    6750 2450
-	-1   0    0    1   
-$EndComp
+Wire Wire Line
+	2450 3700 3350 3700
 $Comp
 L power:GND #PWR?
-U 1 1 61AF6622
-P 7100 2250
-F 0 "#PWR?" H 7100 2000 50  0001 C CNN
-F 1 "GND" H 7105 2077 50  0000 C CNN
-F 2 "" H 7100 2250 50  0001 C CNN
-F 3 "" H 7100 2250 50  0001 C CNN
-	1    7100 2250
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61AF6C31
-P 6750 2250
-F 0 "#PWR?" H 6750 2000 50  0001 C CNN
-F 1 "GND" H 6755 2077 50  0000 C CNN
-F 2 "" H 6750 2250 50  0001 C CNN
-F 3 "" H 6750 2250 50  0001 C CNN
-	1    6750 2250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6750 2300 6750 2250
-Wire Wire Line
-	7100 2250 7100 2300
-Wire Wire Line
-	7100 2600 6900 2600
-Wire Wire Line
-	6700 2900 6900 2900
-Wire Wire Line
-	6900 2900 6900 2600
-Connection ~ 6900 2600
-Wire Wire Line
-	6900 2600 6750 2600
-$Comp
-L power:GND #PWR?
-U 1 1 61AF994E
-P 6700 3950
-F 0 "#PWR?" H 6700 3700 50  0001 C CNN
-F 1 "GND" H 6705 3777 50  0000 C CNN
-F 2 "" H 6700 3950 50  0001 C CNN
-F 3 "" H 6700 3950 50  0001 C CNN
-	1    6700 3950
+U 1 1 61B0654F
+P 3350 4000
+F 0 "#PWR?" H 3350 3750 50  0001 C CNN
+F 1 "GND" H 3355 3827 50  0000 C CNN
+F 2 "" H 3350 4000 50  0001 C CNN
+F 3 "" H 3350 4000 50  0001 C CNN
+	1    3350 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 3900 6700 3950
-$Comp
-L Device:C C?
-U 1 1 61AFA2B7
-P 7000 3150
-F 0 "C?" H 7115 3196 50  0000 L CNN
-F 1 "4.7uF" H 7115 3105 50  0000 L CNN
-F 2 "" H 7038 3000 50  0001 C CNN
-F 3 "~" H 7000 3150 50  0001 C CNN
-	1    7000 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 61AFA95B
-P 7400 3150
-F 0 "C?" H 7515 3196 50  0000 L CNN
-F 1 "100nF" H 7515 3105 50  0000 L CNN
-F 2 "" H 7438 3000 50  0001 C CNN
-F 3 "~" H 7400 3150 50  0001 C CNN
-	1    7400 3150
-	1    0    0    -1  
-$EndComp
+	3350 4050 3350 4000
+Connection ~ 3350 4000
 Wire Wire Line
-	6700 3000 7000 3000
-Connection ~ 7000 3000
-Wire Wire Line
-	7000 3000 7400 3000
-$Comp
-L power:GND #PWR?
-U 1 1 61AFADB7
-P 7200 3300
-F 0 "#PWR?" H 7200 3050 50  0001 C CNN
-F 1 "GND" H 7205 3127 50  0000 C CNN
-F 2 "" H 7200 3300 50  0001 C CNN
-F 3 "" H 7200 3300 50  0001 C CNN
-	1    7200 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7000 3300 7200 3300
-Connection ~ 7200 3300
-Wire Wire Line
-	7200 3300 7400 3300
-Text HLabel 6700 3400 2    50   Input ~ 0
-1PPS
-Wire Wire Line
-	6700 3200 6700 3400
-Text HLabel 5200 3200 0    50   Input ~ 0
-RESETGPS
-Wire Wire Line
-	5300 3200 5200 3200
-Text HLabel 5200 3600 0    50   Input ~ 0
-RXD1GPS
-Text HLabel 5200 3700 0    50   Input ~ 0
-TXD1GPS
-Wire Wire Line
-	5200 3600 5300 3600
-Wire Wire Line
-	5200 3700 5300 3700
-Text HLabel 7600 3000 2    50   Input ~ 0
-CIRCUITODCARGA
-Wire Wire Line
-	7600 3000 7400 3000
-Connection ~ 7400 3000
+	3350 4000 3350 3800
 $EndSCHEMATC
