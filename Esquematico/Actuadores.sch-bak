@@ -119,4 +119,38 @@ Wire Wire Line
 	6700 2950 6700 2800
 Wire Wire Line
 	6700 2800 7050 2800
+Text HLabel 5150 3750 0    50   Input ~ 0
+Enable_Ventilador_Microbomba
+Wire Wire Line
+	5150 3750 5250 3750
+Text HLabel 5150 3350 0    50   Input ~ 0
+ReleBombilla
+Wire Wire Line
+	5150 3350 5250 3350
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 61B21B3E
+P 7100 3350
+F 0 "J?" H 7128 3326 50  0000 L CNN
+F 1 "Conn_ReleBombilla" H 7128 3235 50  0000 L CNN
+F 2 "" H 7100 3350 50  0001 C CNN
+F 3 "~" H 7100 3350 50  0001 C CNN
+	1    7100 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 3350 6900 3350
+$Comp
+L power:GND #PWR?
+U 1 1 61B229AF
+P 6900 3550
+F 0 "#PWR?" H 6900 3300 50  0001 C CNN
+F 1 "GND" H 6905 3377 50  0000 C CNN
+F 2 "" H 6900 3550 50  0001 C CNN
+F 3 "" H 6900 3550 50  0001 C CNN
+	1    6900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3450 6900 3550
 $EndSCHEMATC
