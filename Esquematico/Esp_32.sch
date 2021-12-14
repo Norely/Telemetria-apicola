@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L RF_Module:ESP32-WROOM-32 U?
+L RF_Module:ESP32-WROOM-32 U1
 U 1 1 61A8C4CA
 P 5000 4050
-F 0 "U?" H 5000 5631 50  0000 C CNN
+F 0 "U1" H 5000 5631 50  0000 C CNN
 F 1 "ESP32-WROOM-32" H 5000 5540 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 5000 2550 50  0001 C CNN
 F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 4700 4100 50  0001 C CNN
@@ -25,10 +25,10 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 61A8C4D0
 P 5000 5550
-F 0 "#PWR?" H 5000 5300 50  0001 C CNN
+F 0 "#PWR0103" H 5000 5300 50  0001 C CNN
 F 1 "GND" H 5005 5377 50  0000 C CNN
 F 2 "" H 5000 5550 50  0001 C CNN
 F 3 "" H 5000 5550 50  0001 C CNN
@@ -37,21 +37,6 @@ F 3 "" H 5000 5550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5000 5450 5000 5550
-$Comp
-L Device:R R?
-U 1 1 61A8C4FD
-P 2850 2250
-F 0 "R?" H 2920 2296 50  0000 L CNN
-F 1 "10K" H 2920 2205 50  0000 L CNN
-F 2 "" V 2780 2250 50  0001 C CNN
-F 3 "~" H 2850 2250 50  0001 C CNN
-	1    2850 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 1800 2850 2100
-Wire Wire Line
-	2850 1800 5000 1800
 Wire Wire Line
 	5000 1800 5000 2650
 Wire Wire Line
@@ -62,29 +47,24 @@ Text HLabel 6000 4250 2    50   Input ~ 0
 Sda
 Text HLabel 6000 4350 2    50   Input ~ 0
 Scl
-Text HLabel 2500 1800 0    50   Input ~ 0
-3V3
-Wire Wire Line
-	2500 1800 2850 1800
-Connection ~ 2850 1800
 $Comp
 L Device:LED D?
 U 1 1 61A9D6F8
 P 7700 3550
 AR Path="/61A89954/61A9D6F8" Ref="D?"  Part="1" 
-AR Path="/61A89555/61A9D6F8" Ref="D?"  Part="1" 
-F 0 "D?" H 7693 3767 50  0000 C CNN
+AR Path="/61A89555/61A9D6F8" Ref="D1"  Part="1" 
+F 0 "D1" H 7693 3767 50  0000 C CNN
 F 1 "LED" H 7693 3676 50  0000 C CNN
-F 2 "" H 7700 3550 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 7700 3550 50  0001 C CNN
 F 3 "~" H 7700 3550 50  0001 C CNN
 	1    7700 3550
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0104
 U 1 1 61AAECDD
 P 8550 3650
-F 0 "#PWR?" H 8550 3400 50  0001 C CNN
+F 0 "#PWR0104" H 8550 3400 50  0001 C CNN
 F 1 "GND" H 8555 3477 50  0000 C CNN
 F 2 "" H 8550 3650 50  0001 C CNN
 F 3 "" H 8550 3650 50  0001 C CNN
@@ -94,12 +74,12 @@ $EndComp
 Wire Wire Line
 	8550 3550 8550 3650
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 61AB1DDA
 P 8200 3550
-F 0 "R?" V 7993 3550 50  0000 C CNN
+F 0 "R2" V 7993 3550 50  0000 C CNN
 F 1 "R" V 8084 3550 50  0000 C CNN
-F 2 "" V 8130 3550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8130 3550 50  0001 C CNN
 F 3 "~" H 8200 3550 50  0001 C CNN
 	1    8200 3550
 	0    1    1    0   
@@ -113,8 +93,8 @@ L Switch:SW_Push_Dual_x2 SW?
 U 1 1 61A9D6FE
 P 6650 2850
 AR Path="/61A89954/61A9D6FE" Ref="SW?"  Part="1" 
-AR Path="/61A89555/61A9D6FE" Ref="SW?"  Part="1" 
-F 0 "SW?" H 6650 3135 50  0000 C CNN
+AR Path="/61A89555/61A9D6FE" Ref="SW2"  Part="1" 
+F 0 "SW2" H 6650 3135 50  0000 C CNN
 F 1 "SW_BOOT OPTION" H 6650 3044 50  0000 C CNN
 F 2 "" H 6650 3050 50  0001 C CNN
 F 3 "~" H 6650 3050 50  0001 C CNN
@@ -122,10 +102,10 @@ F 3 "~" H 6650 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 61ACD323
 P 7050 2900
-F 0 "#PWR?" H 7050 2650 50  0001 C CNN
+F 0 "#PWR0105" H 7050 2650 50  0001 C CNN
 F 1 "GND" H 7055 2727 50  0000 C CNN
 F 2 "" H 7050 2900 50  0001 C CNN
 F 3 "" H 7050 2900 50  0001 C CNN
@@ -136,52 +116,6 @@ Wire Wire Line
 	6850 2850 7050 2850
 Wire Wire Line
 	7050 2850 7050 2900
-Wire Wire Line
-	2850 2400 2850 2850
-Wire Wire Line
-	2850 3250 2850 3450
-$Comp
-L Switch:SW_Push_Dual_x2 SW?
-U 1 1 61ADD626
-P 3800 2850
-AR Path="/61A89954/61ADD626" Ref="SW?"  Part="1" 
-AR Path="/61A89555/61ADD626" Ref="SW?"  Part="1" 
-F 0 "SW?" H 3800 3135 50  0000 C CNN
-F 1 "SW_EN" H 3800 3044 50  0000 C CNN
-F 2 "" H 3800 3050 50  0001 C CNN
-F 3 "~" H 3800 3050 50  0001 C CNN
-	1    3800 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 61A8C4E6
-P 2850 3100
-F 0 "C?" H 2965 3146 50  0000 L CNN
-F 1 "0.1uF" H 2965 3055 50  0000 L CNN
-F 2 "" H 2888 2950 50  0001 C CNN
-F 3 "~" H 2850 3100 50  0001 C CNN
-	1    2850 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61A8C4EC
-P 2850 3450
-F 0 "#PWR?" H 2850 3200 50  0001 C CNN
-F 1 "GND" H 2855 3277 50  0000 C CNN
-F 2 "" H 2850 3450 50  0001 C CNN
-F 3 "" H 2850 3450 50  0001 C CNN
-	1    2850 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3600 2850 2850 2850
-Connection ~ 2850 2850
-Wire Wire Line
-	2850 2850 2850 2950
-Wire Wire Line
-	4000 2850 4400 2850
 Text HLabel 5850 2950 2    50   Input ~ 0
 Tx
 Text HLabel 5850 3150 2    50   Input ~ 0
@@ -222,4 +156,73 @@ Wire Wire Line
 	5600 3750 5850 3750
 Wire Wire Line
 	5600 3850 5850 3850
+Wire Wire Line
+	4400 2850 3750 2850
+Connection ~ 3750 3250
+Wire Wire Line
+	3350 3250 3750 3250
+Wire Wire Line
+	3750 3250 3750 3400
+Wire Wire Line
+	3750 2850 3750 2950
+Connection ~ 3750 2850
+Wire Wire Line
+	3350 2850 3750 2850
+Wire Wire Line
+	3750 2500 3750 2850
+$Comp
+L power:GND #PWR0106
+U 1 1 61A8C4EC
+P 3750 3400
+F 0 "#PWR0106" H 3750 3150 50  0001 C CNN
+F 1 "GND" H 3755 3227 50  0000 C CNN
+F 2 "" H 3750 3400 50  0001 C CNN
+F 3 "" H 3750 3400 50  0001 C CNN
+	1    3750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61A8C4E6
+P 3750 3100
+F 0 "C1" H 3865 3146 50  0000 L CNN
+F 1 "0.1uF" H 3865 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 3788 2950 50  0001 C CNN
+F 3 "~" H 3750 3100 50  0001 C CNN
+	1    3750 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual_x2 SW?
+U 1 1 61ADD626
+P 3350 3050
+AR Path="/61A89954/61ADD626" Ref="SW?"  Part="1" 
+AR Path="/61A89555/61ADD626" Ref="SW1"  Part="1" 
+F 0 "SW1" H 3350 3335 50  0000 C CNN
+F 1 "SW_EN" H 3350 3244 50  0000 C CNN
+F 2 "" H 3350 3250 50  0001 C CNN
+F 3 "~" H 3350 3250 50  0001 C CNN
+	1    3350 3050
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3750 1800
+Wire Wire Line
+	3350 1800 3750 1800
+Text HLabel 3350 1800 0    50   Input ~ 0
+3V3
+Wire Wire Line
+	3750 1800 5000 1800
+Wire Wire Line
+	3750 1800 3750 2200
+$Comp
+L Device:R R1
+U 1 1 61A8C4FD
+P 3750 2350
+F 0 "R1" H 3820 2396 50  0000 L CNN
+F 1 "10K" H 3820 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3680 2350 50  0001 C CNN
+F 3 "~" H 3750 2350 50  0001 C CNN
+	1    3750 2350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
