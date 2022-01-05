@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name BQ24070RHLR)(type Legacy)(uri ${KIPRJMOD}/BQ24070RHLR/BQ24070RHLR.lib)(options "")(descr ""))
+  (lib (name SS34)(type Legacy)(uri ${KIPRJMOD}/SS34/SS34.lib)(options "")(descr ""))
+)

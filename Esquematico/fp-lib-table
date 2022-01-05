@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name BQ24070RHLR)(type Legacy)(uri ${KIPRJMOD}/BQ24070RHLR/BQ24070RHLR.mod)(options "")(descr ""))
+  (lib (name SS34)(type Legacy)(uri ${KIPRJMOD}/SS34/SS34.mod)(options "")(descr ""))
+)

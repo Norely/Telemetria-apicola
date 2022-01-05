@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -183,4 +183,10 @@ Wire Wire Line
 	5100 3200 5100 3850
 Wire Wire Line
 	5100 3850 4850 3850
+$Sheet
+S 2200 3000 1100 350 
+U 61B92A68
+F0 "CargadorBateria" 50
+F1 "CargadorBateria.sch" 50
+$EndSheet
 $EndSCHEMATC
