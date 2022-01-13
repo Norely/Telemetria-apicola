@@ -1,6 +1,26 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# 103AT-2_103AT-2
+#
+DEF 103AT-2_103AT-2 RT 0 30 Y Y 1 F N
+F0 "RT" 650 300 50 H V L CNN
+F1 "103AT-2_103AT-2" 650 200 50 H V L CNN
+F2 "103AT2" 650 100 50 H I L CNN
+F3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-30/DSA-588185.pdf" 650 0 50 H I L CNN
+F4 "NTC Thermistors 10kohm 1%" 650 -100 50 H I L CNN "Description"
+F5 "8" 650 -200 50 H I L CNN "Height"
+F6 "Semitec" 650 -300 50 H I L CNN "Manufacturer_Name"
+F7 "103AT-2" 650 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "954-103AT-2" 650 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Semitec/103AT-2?qs=wgO0AD0o1vvcDzsKguD%252Bew%3D%3D" 650 -600 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
 # BQ24070RHLR_BQ24070RHLR
 #
 DEF BQ24070RHLR_BQ24070RHLR IC 0 30 Y Y 1 F N
@@ -290,39 +310,6 @@ P 5 1 1 0 0 0 40 -15 0 -30 -40 -45 0 -60 N
 P 5 1 1 0 0 60 40 45 0 30 -40 15 0 0 N
 X ~ 1 0 100 40 D 50 50 1 1 P
 X ~ 2 0 -100 40 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_Thermistor_NTC
-#
-DEF Device_Thermistor_NTC TH 0 0 N Y 1 F N
-F0 "TH" -175 0 50 V V C CNN
-F1 "Device_Thermistor_NTC" 125 0 50 V V C CNN
-F2 "" 0 50 50 H I C CNN
-F3 "" 0 50 50 H I C CNN
-$FPLIST
- *NTC*
- *Thermistor*
- PIN?ARRAY*
- bornier*
- *Terminal?Block*
- R_*
-$ENDFPLIST
-DRAW
-A -126 88 7 -265 818 0 1 0 N -120 85 -125 95
-A -110 85 10 1800 -900 0 1 0 N -120 85 -110 75
-A -110 85 10 -900 0 0 1 0 N -110 75 -100 85
-A -110 110 10 0 900 0 1 0 N -100 110 -110 120
-A -110 110 10 900 1800 0 1 0 N -110 120 -120 110
-A -110 110 10 1800 -900 0 1 0 N -120 110 -110 100
-A -104 119 20 -1075 -253 0 1 0 N -110 100 -85 110
-S -40 100 40 -100 0 1 10 N
-P 2 0 1 0 -100 85 -100 110 N
-P 4 0 1 0 -70 100 -70 60 70 -60 70 -100 N
-P 6 0 1 0 -100 -145 -100 -55 -110 -85 -90 -85 -100 -55 -100 -65 F
-P 6 0 1 0 -70 -55 -70 -145 -80 -115 -60 -115 -70 -145 -70 -135 F
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

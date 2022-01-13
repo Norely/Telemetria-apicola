@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 103AT-2
+D NTC Thermistors 10kohm 1%
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-30/DSA-588185.pdf
+$ENDCMP
+#
+#End Doc Library
