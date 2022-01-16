@@ -82,7 +82,7 @@ U 1 1 61B710AD
 P 7250 2700
 F 0 "J6" H 7278 2676 50  0000 L CNN
 F 1 "Conn_Ventilador_Microbomba" H 7278 2585 50  0000 L CNN
-F 2 "" H 7250 2700 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7250 2700 50  0001 C CNN
 F 3 "~" H 7250 2700 50  0001 C CNN
 	1    7250 2700
 	1    0    0    -1  
@@ -133,7 +133,7 @@ U 1 1 61B21B3E
 P 7100 3350
 F 0 "J5" H 7128 3326 50  0000 L CNN
 F 1 "Conn_ReleBombilla" H 7128 3235 50  0000 L CNN
-F 2 "" H 7100 3350 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7100 3350 50  0001 C CNN
 F 3 "~" H 7100 3350 50  0001 C CNN
 	1    7100 3350
 	1    0    0    -1  

@@ -45,8 +45,8 @@ L Connector:Conn_01x05_Female J1
 U 1 1 61B942FE
 P 6300 3450
 F 0 "J1" H 6328 3476 50  0000 L CNN
-F 1 "Conn_01x05_Female" H 6328 3385 50  0000 L CNN
-F 2 "" H 6300 3450 50  0001 C CNN
+F 1 "Conn_USB" H 6328 3385 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Horizontal" H 6300 3450 50  0001 C CNN
 F 3 "~" H 6300 3450 50  0001 C CNN
 	1    6300 3450
 	1    0    0    -1  

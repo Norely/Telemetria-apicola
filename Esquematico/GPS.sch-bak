@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ U 1 1 61B217C9
 P 6150 3050
 F 0 "J7" H 6178 3026 50  0000 L CNN
 F 1 "Conn_GPS" H 6178 2935 50  0000 L CNN
-F 2 "" H 6150 3050 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 6150 3050 50  0001 C CNN
 F 3 "~" H 6150 3050 50  0001 C CNN
 	1    6150 3050
 	1    0    0    -1  
