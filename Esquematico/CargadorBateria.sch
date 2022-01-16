@@ -904,7 +904,7 @@ U 1 1 61E0D1F2
 P 4050 2600
 F 0 "RT1" V 4388 2372 50  0000 R CNN
 F 1 "103AT-2" V 4297 2372 50  0000 R CNN
-F 2 "103AT2" H 4700 2700 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 4700 2700 50  0001 L CNN
 F 3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-30/DSA-588185.pdf" H 4700 2600 50  0001 L CNN
 F 4 "NTC Thermistors 10kohm 1%" H 4700 2500 50  0001 L CNN "Description"
 F 5 "8" H 4700 2400 50  0001 L CNN "Height"

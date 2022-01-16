@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source "/home/elkin/Documents/Universidad/Sistemas Embebidos/Telemetria-apicola/Esquematico/Telemetria_apicola.sch")
-    (date "sáb 15 ene 2022 16:29:14")
-    (tool "Eeschema 5.1.12-84ad8e8a86~92~ubuntu20.04.1")
+    (source /home/jsmartinez/apicolaEmb/Telemetria-apicola/Esquematico/Telemetria_apicola.sch)
+    (date "dom 16 ene 2022 17:18:02 -05")
+    (tool "Eeschema 5.1.12-84ad8e8a86~92~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -449,7 +449,7 @@
       (tstamp 61E81F93))
     (comp (ref RT1)
       (value 103AT-2)
-      (footprint 103AT2)
+      (footprint Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical)
       (datasheet https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-30/DSA-588185.pdf)
       (fields
         (field (name Description) "NTC Thermistors 10kohm 1%")
@@ -817,9 +817,9 @@
         (pin (num 4) (name D) (type passive)))))
   (libraries
     (library (logical 103AT-2)
-      (uri "/home/elkin/Documents/Universidad/Sistemas Embebidos/Telemetria-apicola/Esquematico/103AT/103AT-2.lib"))
+      (uri /home/jsmartinez/apicolaEmb/Telemetria-apicola/Esquematico/103AT/103AT-2.lib))
     (library (logical BQ24070RHLR)
-      (uri "/home/elkin/Documents/Universidad/Sistemas Embebidos/Telemetria-apicola/Esquematico/BQ24070RHLR/BQ24070RHLR.lib"))
+      (uri /home/jsmartinez/apicolaEmb/Telemetria-apicola/Esquematico/BQ24070RHLR/BQ24070RHLR.lib))
     (library (logical Connector)
       (uri /usr/share/kicad/library/Connector.lib))
     (library (logical Device)
@@ -833,7 +833,7 @@
     (library (logical Regulator_Switching)
       (uri /usr/share/kicad/library/Regulator_Switching.lib))
     (library (logical SS34)
-      (uri "/home/elkin/Documents/Universidad/Sistemas Embebidos/Telemetria-apicola/Esquematico/SS34/SS34.lib"))
+      (uri /home/jsmartinez/apicolaEmb/Telemetria-apicola/Esquematico/SS34/SS34.lib))
     (library (logical Switch)
       (uri /usr/share/kicad/library/Switch.lib)))
   (nets

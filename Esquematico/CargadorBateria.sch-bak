@@ -195,7 +195,7 @@ U 1 1 61BD9E09
 P 3200 2650
 F 0 "J8" H 3308 2831 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 3308 2740 50  0000 C CNN
-F 2 "" H 3200 2650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3200 2650 50  0001 C CNN
 F 3 "~" H 3200 2650 50  0001 C CNN
 	1    3200 2650
 	1    0    0    -1  
@@ -618,7 +618,7 @@ U 1 1 61E2F496
 P 8850 1150
 F 0 "L1" V 8669 1150 50  0000 C CNN
 F 1 "22uH" V 8760 1150 50  0000 C CNN
-F 2 "" H 8850 1150 50  0001 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" H 8850 1150 50  0001 C CNN
 F 3 "~" H 8850 1150 50  0001 C CNN
 	1    8850 1150
 	0    1    1    0   
@@ -733,7 +733,7 @@ AR Path="/61B5A8A7/61E7B18A" Ref="J?"  Part="1"
 AR Path="/61B92A68/61E7B18A" Ref="J10"  Part="1" 
 F 0 "J10" H 8492 3185 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 8492 3094 50  0000 C CNN
-F 2 "" H 8600 3000 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 8600 3000 50  0001 C CNN
 F 3 "~" H 8600 3000 50  0001 C CNN
 	1    8600 3000
 	-1   0    0    -1  
@@ -831,7 +831,7 @@ U 1 1 61E81F93
 P 1600 1350
 F 0 "J9" H 1657 1667 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 1657 1576 50  0000 C CNN
-F 2 "" H 1650 1310 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 1650 1310 50  0001 C CNN
 F 3 "~" H 1650 1310 50  0001 C CNN
 	1    1600 1350
 	1    0    0    -1  
@@ -904,7 +904,7 @@ U 1 1 61E0D1F2
 P 4050 2600
 F 0 "RT1" V 4388 2372 50  0000 R CNN
 F 1 "103AT-2" V 4297 2372 50  0000 R CNN
-F 2 "103AT2" H 4700 2700 50  0001 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 4700 2700 50  0001 L CNN
 F 3 "https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-30/DSA-588185.pdf" H 4700 2600 50  0001 L CNN
 F 4 "NTC Thermistors 10kohm 1%" H 4700 2500 50  0001 L CNN "Description"
 F 5 "8" H 4700 2400 50  0001 L CNN "Height"
