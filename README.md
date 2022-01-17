@@ -35,3 +35,63 @@ El módulo medirá temperatura, humedad y llenado de los tanques. Los actuadores
 * Debe garantizar la calidad apropiada de la miel
 * El apiario debe usarse sólo por personal calificado.
 * La interfaz hombre-máquina debe ser responsive.
+
+# Hardware
+<img src="https://raw.githubusercontent.com/AchimPieters/esp32-homekit-camera/master/Images/ESP32-38%20PIN-DEVBOARD.png">  
+  
+|Pin| Protocolo | Nombre |
+|-----|------|------|
+|33|I2C|SDA|
+|36|I2C|SCL|
+
+
+# Software
+<img src="https://agelectro904833371.files.wordpress.com/2019/08/micropython-logo.jpg" width=700 height=150>  
+
+Para esta parte se realiza la [instalación](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html#esp32-intro) para el ESP-32, del firmware mycropython. 
+  
+Este compilador permite realizar algunas acciones como la manipulación de los pines del microcontrolador, Interactuar con los protocolos de comunicacion (I2C, SPI, PWM, etc), Manejo de tiempos entre muchas otras.
+
+## Ejemplos:
+
+#### Pins
+~~~
+from machine import Pin
+
+p0 = Pin(0, Pin.OUT)    # create output pin on GPIO0
+p0.on()                 # set pin to "on" (high) level
+p0.off()                # set pin to "off" (low) level
+p0.value(1)             # set pin to on/high
+
+p2 = Pin(2, Pin.IN)     # create input pin on GPIO2
+print(p2.value())       # get value, 0 or 1
+
+p4 = Pin(4, Pin.IN, Pin.PULL_UP) # enable internal pull-up resistor
+p5 = Pin(5, Pin.OUT, value=1) # set pin high on creation
+~~~
+
+#### Protocolo
+~~~
+from machine import Pin, SoftI2C
+
+i2c = SoftI2C(scl=Pin(5), sda=Pin(4), freq=100000)
+
+i2c.scan()              # scan for devices
+
+i2c.readfrom(0x3a, 4)   # read 4 bytes from device with address 0x3a
+i2c.writeto(0x3a, '12') # write '12' to device with address 0x3a
+
+buf = bytearray(10)     # create a buffer with 10 bytes
+i2c.writeto(0x3a, buf)  # write the given buffer to the peripheral
+~~~
+
+#### Tiempo
+~~~
+import time
+
+time.sleep(1)           # sleep for 1 second
+time.sleep_ms(500)      # sleep for 500 milliseconds
+time.sleep_us(10)       # sleep for 10 microseconds
+start = time.ticks_ms() # get millisecond counter
+delta = time.ticks_diff(time.ticks_ms(), start) # compute time difference
+~~~
