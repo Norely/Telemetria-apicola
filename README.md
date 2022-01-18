@@ -37,12 +37,39 @@ El módulo medirá temperatura, humedad y llenado de los tanques. Los actuadores
 * La interfaz hombre-máquina debe ser responsive.
 
 # Hardware
+***ESP 32***
+
+Para pruebas del firmware y algunos componentes se hará uso de la siguiente tarjeta:
 <img src="https://raw.githubusercontent.com/AchimPieters/esp32-homekit-camera/master/Images/ESP32-38%20PIN-DEVBOARD.png">  
   
 |Pin| Protocolo | Nombre |
 |-----|------|------|
 |33|I2C|SDA|
 |36|I2C|SCL|
+
+Este tiene las siguientes caracteristicas:
+- Procesador Tensilica Xtensa 32bits LX6 hasta 240MHz.
+- Wi-Fi: 802.11b/g/n/e/i (802.11n @ 2.4 Ghz hasta 150 Mbit/s).
+- Bluetooth: v4.2 BR/EDR y bluetooth  Low Energy (BLE).
+- Rom:448 KiB.
+- SRAM: 520 KiB.
+- RTC slow SRAM: 8 KiB.
+- RTC fast SRAM: 8 KiB.
+- eFuse: 1 Kbit.
+- Flash embebida: 0 MiB (ESP32-D0WDQ6, ESP32-D0WD, and ESP32-S0WD chips); 2 MiB (ESP32-D2WD chip); 4 MiB (ESP32-PICO-D4 SIP module).
+- Periféricos compatibles: ADC, DAC, I2C, UART, Interfaz CAN 2.0, SPI, I2S, RMII y PWM entre otros.
+- Seguridad tipo IEEE 802.11, WFA, WPA/WPA2 y WAPI.
+- Encriptación de memoria Flash.
+- Criptografía soportada por acelerador de hardware: AES, SHA-2, RSA, ECC, RNG.
+- Voltaje de trabajo 3.3VDC.
+- Energía y datos  via conector microUSB 5VDC.
+
+En la tarjeta que estamos desarrollando se emplea el siguiente módulo (Esp 32-WROOM-32D): 
+<p align="center">
+<img src="https://sc04.alicdn.com/kf/H9cf20c965763437b96f384bf816d4734A.jpg" width=300 height=250>
+</p>
+
+Este se encuentra en SIGMA ELECTRONICA ([ESP 32](https://www.sigmaelectronica.net/producto/esp32-wroom-32d/)) y tambien su [Hoja de datos](https://www.sigmaelectronica.net/wp-content/uploads/2021/11/ESP32-WROOM-32D_pdf.pdf)
 
 
 # Software
