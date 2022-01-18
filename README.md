@@ -7,7 +7,7 @@
  - Gustavo Olarte Romero
  - Norely Jimenez Melenge
 
-# En que consiste el producto?
+# ¿En que consiste el producto?
 El producto consiste es un sistema de embebido que permite sensar la temperatura y mantenerla desde los 12°C hasta los 35°C,ya que en un apiario es importante que la temperatura no exceda los 38°C,para evitar que las abejas realizan trabajo extra,como salir a traer agua o realizar ventilación con sus alas. Además cuenta con un sistema de GPs que envía una notificación al celular,  en el cual es necesario para obtener la certificación que identifique su posición geográfica.
 
 El módulo medirá temperatura, humedad y llenado de los tanques. Los actuadores constaría de un ventilador para refrigerar el ambiente y una resistencia en caso de requerir aumento de temperatura. Cuando los tanques estén llenos el módulo envía un mensaje de alerta a la interfaz que se haya elegido. También se puede incluir un módulo de alimentación artificial para que suministre agua azucarada en caso de ser necesario (se realizará 45 días antes de la floración y se suspende al inicio de la misma). 
@@ -191,6 +191,29 @@ Especificaciones:
 - Vida útil de trabajo continuo de 500 horas.
 
 Este se encuentra en SIGMA ELECTRONICA ([Microbomba](https://www.sigmaelectronica.net/producto/sig0833/)).
+
+***Neo M6***
+
+Se emplea el módulo NEO-6M para emplearlo a parte de la tarjeta a desarrollar dadas las condiciones que requiere un modulo gps en la misma tarjeta como estar lejos de ciertos componentes como capacitores, ademas de la antena de la esp 32 con la que podria haber interferencia.
+
+<p align="center">
+<img src="https://github.com/Norely/Telemetria-apicola/blob/main/imagenes%20git/modulo-gps-neo-6m.jpg" width=400 height=400>
+</p>
+
+Especificaciones:
+- Ultra sensibilidad: -165dBm
+- 22 tracking/66 acquisition-channel receiver
+- Coporta estándares WAAS/EGNOS/MSAS/GAGAN
+- Frecuencia de actualización 5Hz velocidad de desplazamiento máxima: 500m/seg
+- Protocolo NMEA  (a 9600bps)
+- 01 puerto serial
+- Antena incorporada de 18.2 x 18.2 x 4.0 mm
+- Rango de temperatura: -40 to 85 C
+- Cumple estándar RoHS
+- Tamano reducido 30mm x20mm x 11.4mm
+
+Este se encuentra en Dualtronica ([GPS NEO-6M](https://dualtronica.com/modulos/86-modulo-gps-neo-6m.html)) y su [Hoja de datos](https://github.com/Norely/Telemetria-apicola/blob/main/Hojas%20de%20datos/GY-NEO-6M-V2-pdf.pdf).
+
 
 # Software
 <img src="https://agelectro904833371.files.wordpress.com/2019/08/micropython-logo.jpg" width=700 height=150>  
