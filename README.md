@@ -66,11 +66,46 @@ Este tiene las siguientes caracteristicas:
 
 En la tarjeta que estamos desarrollando se emplea el siguiente módulo (Esp 32-WROOM-32D): 
 <p align="center">
-<img src="https://sc04.alicdn.com/kf/H9cf20c965763437b96f384bf816d4734A.jpg" width=300 height=250>
+<img src="https://github.com/Norely/Telemetria-apicola/blob/main/imagenes%20git/esp32.jpg" width=300 height=250>
 </p>
 
-Este se encuentra en SIGMA ELECTRONICA ([ESP 32](https://www.sigmaelectronica.net/producto/esp32-wroom-32d/)) y tambien su [Hoja de datos](https://www.sigmaelectronica.net/wp-content/uploads/2021/11/ESP32-WROOM-32D_pdf.pdf)
+Este se encuentra en SIGMA ELECTRONICA ([ESP 32](https://www.sigmaelectronica.net/producto/esp32-wroom-32d/)) y tambien su [Hoja de datos](https://github.com/Norely/Telemetria-apicola/blob/main/Hojas%20de%20datos/ESP32-WROOM-32D_pdf.pdf) de donde se puede obtener el esquematico de los perifericos para el módulo:
 
+<p align="center">
+<img src="https://github.com/Norely/Telemetria-apicola/blob/main/imagenes%20git/ESP32_ESQUEMATICO_PERIFERICOS.png" width=700 height=500>
+</p>
+
+***Raspberry PI4-4GB***
+
+Esta tarjeta se considera para el montaje del servidor en donde se planea guardar la información obtenida del proyecto. 
+
+<p align="center">
+<img src="https://github.com/Norely/Telemetria-apicola/blob/main/imagenes%20git/rasp.png" width=500 height=300>
+</p>
+
+Especificaciones:
+- BCM2711 Broadcom, Quad Core Cortex-A72.
+- 64-bit SoC @ 1,5 GHz.
+- Memoria RAM: 4 GB.
+- 2.4 GHz y 5.0 GHz IEEE 802.11b/g/n/ac inalámbrico LAN.
+- Bluetooth 5.0 BLE.
+- Gigabit Ethernet.
+- 2 Puertos USB 2.0.
+- 2 Puertos USB 3.0.
+- Conector GPIO estándar de 40 pines (Totalmente compatible con las placas de desarrollo Raspberry PI anteriores).
+- 2 puertos micro HDMI (compatible con hasta 4Kp60).
+- Puerto de visualización MIPI DSI de 2 vías.
+- Puerto de camara MIPI de 2 carriles.
+- Puerto de vídeo compuesto y audio estéreo de 4 polos.
+- H.265 (decodificador de 4Kp60).
+- H.264 (decodificador 1080p60, 1080p30).
+- OpenGL ES 3.0 gráficos.
+- Ranura para tarjeta Micro SD para cargar el sistema operativo y el almacenamiento de datos.
+- Alimentación de entrada por conector USB Tipo C: 5V – 3A.
+- Alimentación de entrada por conector GPIO: 5V – 3A.
+- Alimentación sobre Ethernet (PoE) habilitada (requiere un complemento adicional PoE por separado): 5V – 3A.
+
+Este se encuentra en SIGMA ELECTRONICA ([RPI4-4GB](https://www.sigmaelectronica.net/producto/rpi4-4gb/)) y tambien su [Hoja de datos](hhttps://github.com/Norely/Telemetria-apicola/blob/main/Hojas%20de%20datos/RASP.pdf)
 
 # Software
 <img src="https://agelectro904833371.files.wordpress.com/2019/08/micropython-logo.jpg" width=700 height=150>  
