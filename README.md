@@ -20,10 +20,10 @@ El módulo medirá temperatura, humedad y llenado de los tanques. Los actuadores
 - Ventilador
 - Microbomba
 - Neo m7 (GPS)
-- Regulador ASM1117 3.3V y 5V
+- Regulador ASM1117 3.3V
 - Driver L293D
 - Convertidor MT3608
-- 
+- BQ24070
 
 # Requerimientos funcionales
 * El apiario debe recopilar constantemente las variables de interés (temperatura y humedad)
