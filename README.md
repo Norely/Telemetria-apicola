@@ -15,7 +15,6 @@ El módulo medirá temperatura, humedad y llenado de los tanques. Los actuadores
 # Componentes basicos
 - ESP32 (Microcontrolador)
 - Raspberry (Servidores)
-- Sensor de temperatura DS18B20
 - Sensor de humedad DHT11 (DIGITAL)  (12 - 35)°C
 - I2C Liquid Crystal Display
 - Ventilador (puente h)
@@ -105,7 +104,36 @@ Especificaciones:
 - Alimentación de entrada por conector GPIO: 5V – 3A.
 - Alimentación sobre Ethernet (PoE) habilitada (requiere un complemento adicional PoE por separado): 5V – 3A.
 
-Este se encuentra en SIGMA ELECTRONICA ([RPI4-4GB](https://www.sigmaelectronica.net/producto/rpi4-4gb/)) y tambien su [Hoja de datos](hhttps://github.com/Norely/Telemetria-apicola/blob/main/Hojas%20de%20datos/RASP.pdf)
+Este se encuentra en SIGMA ELECTRONICA ([RPI4-4GB](https://www.sigmaelectronica.net/producto/rpi4-4gb/)) y tambien su [Hoja de datos](https://github.com/Norely/Telemetria-apicola/blob/main/Hojas%20de%20datos/RASP.pdf)
+
+***Sensor de humedad DHT11***
+
+Este sensor permite obtener la lectura de temperatura y humedad, ademas su señal es digital por lo que facilita su comunicacion con la ESP 32.
+
+<p align="center">
+<img src="https://github.com/Norely/Telemetria-apicola/blob/main/imagenes%20git/DHT11.jpg" width=150 height=400>
+</p>
+
+Especificaciones:
+- humedad relativa 
+-Resolución: 16 bit 
+- Repetibilidad: ± 1% HR 
+- Precisión: En 25 ℃ ± 5% de humedad relativa 
+- Intercambiabilidad: totalmente intercambiables 
+- Tiempo de respuesta: 1 / e (63%) de 25 ℃ 6s 1m / s 6s aire 
+- Histéresis: <± 0,3% HR 
+- Estabilidad a largo plazo: <± 0.5% RH / yr in temperatura 
+- Resolución: 16 bit 
+- Repetibilidad: ± 0,2 ℃ 
+- Rango: A los 25 ℃ ± 2 ℃ 
+- Tiempo de respuesta: 1 / e (63%) 10S 
+- Características eléctricas 
+- Fuente de alimentación: CC 3.5 ~ 5.5V 
+- Corriente de alimentación: medida 0.3mA espera 60μ A 
+- Periodo de muestreo: más de 2 segundos
+
+Este se encuentra en SIGMA ELECTRONICA ([DHT11](https://www.sigmaelectronica.net/producto/dht11/)) y tambien su [Hoja de datos](https://github.com/Norely/Telemetria-apicola/blob/main/Hojas%20de%20datos/DHT11.pdf).
+
 
 # Software
 <img src="https://agelectro904833371.files.wordpress.com/2019/08/micropython-logo.jpg" width=700 height=150>  
