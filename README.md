@@ -17,7 +17,8 @@ El módulo medirá temperatura, humedad y llenado de los tanques. Los actuadores
 - Raspberry (Servidores)
 - Sensor de humedad DHT11 (DIGITAL)  (12 - 35)°C
 - Pantalla OLED
-- Ventilador (puente h)
+- Ventilador
+- Microbomba
 - Neo m7 (GPS)
 
 # Requerimientos funcionales
@@ -138,7 +139,7 @@ Este se encuentra en SIGMA ELECTRONICA ([DHT11](https://www.sigmaelectronica.net
 Se elige una pantalla OLED como recomendación del docente porque es mas eficiente energeticamente y ademas a la cantidad de pixeles que manejan.
 
 <p align="center">
-<img src="https://github.com/Norely/Telemetria-apicola/blob/main/imagenes%20git/OLED.jpg" width=150 height=400>
+<img src="https://github.com/Norely/Telemetria-apicola/blob/main/imagenes%20git/OLED.jpg" width=400 height=400>
 </p>
 
 Especificaciones:
@@ -154,7 +155,42 @@ Especificaciones:
 
 Este se encuentra en Dualtronica ([Pantalla OLED](https://dualtronica.com/pantallas/396-pantalla-oled-096-azul-comunicacion-i2c.html)). La [Hoja de datos](https://github.com/Norely/Telemetria-apicola/blob/main/Hojas%20de%20datos/SSD1306.pdf) corresponde al driver SSD1306 .
 
+***Ventilador***
 
+El medio de refrigeracion que se empleará será un ventilador PI.
+
+<p align="center">
+<img src="https://github.com/Norely/Telemetria-apicola/blob/main/imagenes%20git/VENTILADOR-RPI.jpg" width=400 height=400>
+</p>
+
+Especificaciones: 
+- Voltaje de funcionamiento: 5 V.
+- Corriente nominal: 0.2 A.
+- Dimensiones: 30 mm x 30 mm x 10 mm.
+
+Este se encuentra en SIGMA ELECTRONICA ([Ventilador RPI](https://www.sigmaelectronica.net/producto/ventilador-pi/)) y su [Hoja de datos](https://github.com/Norely/Telemetria-apicola/blob/main/Hojas%20de%20datos/VENTILADOR.pdf).
+
+***Microbomba***
+
+Para surtir alimentación artificial al apiario, se emplea el uso de esta microbomba. Se eligío por encima de la valvula solenoide porque esta requiere un caudal minimo ademas de su relativo costo elevado. 
+
+<p align="center">
+<img src="https://github.com/Norely/Telemetria-apicola/blob/main/imagenes%20git/microbomba.jpg" width=400 height=400>
+</p>
+
+Especificaciones:
+- Voltaje de Alimentación: 2.5-6VDC.
+- Elevación máxima: 40-110cm.
+- Caudal: 80-100L/H.
+- Diámetro exterior de la salida de agua: 7.5 mm.
+- Diámetro interior de salida de agua: 4.7 mm.
+- Diámetro : Aprox. 24 mm.
+- Longitud: Aprox. 45 mm.
+- Altura: aprox. 33 mm.
+- Material: Plástico.
+- Vida útil de trabajo continuo de 500 horas.
+
+Este se encuentra en SIGMA ELECTRONICA ([Microbomba](https://www.sigmaelectronica.net/producto/sig0833/)).
 
 # Software
 <img src="https://agelectro904833371.files.wordpress.com/2019/08/micropython-logo.jpg" width=700 height=150>  
