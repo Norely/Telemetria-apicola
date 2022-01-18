@@ -16,9 +16,8 @@ El módulo medirá temperatura, humedad y llenado de los tanques. Los actuadores
 - ESP32 (Microcontrolador)
 - Raspberry (Servidores)
 - Sensor de humedad DHT11 (DIGITAL)  (12 - 35)°C
-- I2C Liquid Crystal Display
+- Pantalla OLED
 - Ventilador (puente h)
-- Sensor de pH
 - Neo m7 (GPS)
 
 # Requerimientos funcionales
@@ -133,6 +132,28 @@ Especificaciones:
 - Periodo de muestreo: más de 2 segundos
 
 Este se encuentra en SIGMA ELECTRONICA ([DHT11](https://www.sigmaelectronica.net/producto/dht11/)) y tambien su [Hoja de datos](https://github.com/Norely/Telemetria-apicola/blob/main/Hojas%20de%20datos/DHT11.pdf).
+
+***Pantalla OLED***
+
+Se elige una pantalla OLED como recomendación del docente porque es mas eficiente energeticamente y ademas a la cantidad de pixeles que manejan.
+
+<p align="center">
+<img src="https://github.com/Norely/Telemetria-apicola/blob/main/imagenes%20git/OLED.jpg" width=150 height=400>
+</p>
+
+Especificaciones:
+- No necesita backlight.
+- Color:Azul
+- Resolución: 128x64.
+- Voltaje: 3 a 5V.
+- Temperatura de trabajo: -30ºC a 70ºC.
+- Tamaño: 27 x 27 x 4.1 mm
+- Interfaz: I2C IIC TWI
+- Driver: SSD1306
+- Consumo: 0.08W
+
+Este se encuentra en Dualtronica ([Pantalla OLED](https://dualtronica.com/pantallas/396-pantalla-oled-096-azul-comunicacion-i2c.html)). La [Hoja de datos](https://github.com/Norely/Telemetria-apicola/blob/main/Hojas%20de%20datos/SSD1306.pdf) corresponde al driver SSD1306 .
+
 
 
 # Software
