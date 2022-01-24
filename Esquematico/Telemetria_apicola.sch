@@ -184,4 +184,48 @@ Wire Wire Line
 	4850 2250 4900 2250
 Wire Wire Line
 	4900 2250 4900 3450
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61EED65F
+P 3500 4350
+F 0 "H1" H 3600 4396 50  0000 L CNN
+F 1 "MountingHole" H 3600 4305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 3500 4350 50  0001 C CNN
+F 3 "~" H 3500 4350 50  0001 C CNN
+	1    3500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61EED855
+P 7850 4400
+F 0 "H2" H 7950 4446 50  0000 L CNN
+F 1 "MountingHole" H 7950 4355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 7850 4400 50  0001 C CNN
+F 3 "~" H 7850 4400 50  0001 C CNN
+	1    7850 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 61EEDBDE
+P 3400 1900
+F 0 "H4" H 3500 1946 50  0000 L CNN
+F 1 "MountingHole" H 3500 1855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 3400 1900 50  0001 C CNN
+F 3 "~" H 3400 1900 50  0001 C CNN
+	1    3400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 61EEDE7D
+P 8000 1900
+F 0 "H3" H 8100 1946 50  0000 L CNN
+F 1 "MountingHole" H 8100 1855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 8000 1900 50  0001 C CNN
+F 3 "~" H 8000 1900 50  0001 C CNN
+	1    8000 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

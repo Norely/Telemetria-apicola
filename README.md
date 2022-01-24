@@ -45,10 +45,18 @@ El módulo medirá temperatura, humedad y llenado de los tanques. Los actuadores
 Para pruebas del firmware y algunos componentes se hará uso de la siguiente tarjeta:
 <img src="https://raw.githubusercontent.com/AchimPieters/esp32-homekit-camera/master/Images/ESP32-38%20PIN-DEVBOARD.png">  
   
-|Pin| Protocolo | Nombre |
-|-----|------|------|
-|33|I2C|SDA|
-|36|I2C|SCL|
+|Pin| Protocolo | Nombre |Dispositivo|
+|-----|------|------|-----|
+|33|I2C|SDA|Pantalla|
+|36|I2C|SCL|Pantalla|
+|34|UART|Rx|USB|
+|35|UART|Tx|USB|
+|23|UART|Rx|GPS|
+|27|UART|Tx|GPS|
+|24|GPIO| |Sensor T/H|
+|26| | |Ventilador|
+|29| | |Microbomba|
+|13| | |Rele Bombilla|
 
 Este tiene las siguientes caracteristicas:
 - Procesador Tensilica Xtensa 32bits LX6 hasta 240MHz.
@@ -269,3 +277,10 @@ time.sleep_us(10)       # sleep for 10 microseconds
 start = time.ticks_ms() # get millisecond counter
 delta = time.ticks_diff(time.ticks_ms(), start) # compute time difference
 ~~~
+
+# Modelo 3D Diseño PCB
+
+<p align="center">
+<img src="https://github.com/Norely/Telemetria-apicola/blob/main/imagenes%20git/PCB.png" width=500 height=300>
+</p>
+
