@@ -146,16 +146,16 @@ Wire Wire Line
 	5600 3550 7550 3550
 Text HLabel 5850 3650 2    50   Input ~ 0
 ReleBombilla
-Text HLabel 5850 3750 2    50   Input ~ 0
-RXD1GPS
 Text HLabel 5850 3850 2    50   Input ~ 0
+RXD1GPS
+Text HLabel 5850 3950 2    50   Input ~ 0
 TXD1GPS
 Wire Wire Line
 	5600 3650 5850 3650
 Wire Wire Line
-	5600 3750 5850 3750
-Wire Wire Line
 	5600 3850 5850 3850
+Wire Wire Line
+	5600 3950 5850 3950
 Wire Wire Line
 	4400 2850 3750 2850
 Connection ~ 3750 3250
