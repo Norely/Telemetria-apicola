@@ -7,8 +7,8 @@ import  network
 dht_pin = 24
 #UART variables
 baudrate=9600
-u2tx = 28
-u2rx = 27 
+u2tx = 16
+u2rx = 15 
 
 d = dht.DHT11(machine.Pin(dht_pin))
 

@@ -2,8 +2,8 @@ from curses import baudrate
 from machine import UART
 
 baudrate=9600
-u2tx = 28
-u2rx = 27 
+u2tx = 16
+u2rx = 15 
 
 uart = UART(1, baudrate=9600, tx=u2tx, rx=u2rx)  # init with given baudrate
 uart.init(9600, bits=8, parity=None, stop=1) # init with given parameters
